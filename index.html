@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Crossing Lab</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logoBicWhite.png" alt="상단로고">
+            </a>
+        </div>
+        <nav>
+            <ul class="gnb">
+                <li class="gnb-hover"><a href="html/ourStory.html">Our Story</a></li>
+                <li class="menu-hover gnb-hover"><a href="#">What We Do
+                        <ul class="submenu">
+                            <li><a href="html/services.html">Services</a></li>
+                            <li><a href="html/business.html">Business</a></li>
+                        </ul>
+                    </a></li>
+                <li class="gnb-hover"><a href="html/people.html">People</a></li>
+            </ul>
+        </nav>
+        <ul class="language">
+            <li>KO</li>
+            <li>EN</li>
+        </ul>
+    </header>
+    <div id="main">
+        <div class="slider">
+            <div class="slide current">
+                <div class="video-box">
+                    <video src="images/myMe.mp4" controls muted autoplay="" loop=""></video>
+                </div>
+                <div class="content" data-aos="fade-up">
+                    <h1>하루를 살더라도<br><span>나만의 나로</span> 살거야</h1>
+                </div>
+                <div class="btns">
+                    <div class="prev-btn">
+                        market
+                    </div>
+                    <div class="next-btn">
+                        my space
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="video-box">
+                    <video src="images/mySpace.mp4" controls muted autoplay="" loop=""></video>
+                </div>
+                <div class="content">
+                    <h1>나만의 <span>드림하우스</span>를<br> 디자인해봐</h1>
+                </div>
+                <div class="btns">
+                    <div class="prev-btn">
+                        my me
+                    </div>
+                    <div class="next-btn">
+                        gallery
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="video-box">
+                    <video src="images/gallery.mp4" controls muted autoplay="" loop=""></video>
+                </div>
+                <div class="content">
+                    <h1>멋진 <span>아티스트로서</span> 내 작품으로<br>세상과 소통할거야</h1>
+                </div>
+                <div class="btns">
+                    <div class="prev-btn">
+                        my space
+                    </div>
+                    <div class="next-btn">
+                        world
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="video-box">
+                    <video src="images/world.mp4" controls muted autoplay="" loop=""></video>
+                </div>
+                <div class="content">
+                    <h1><span>메타버스 공간에서 </span>친구들과<br>즐거운 추억을 만들어봐</h1>
+                </div>
+                <div class="btns">
+                    <div class="prev-btn">
+                        gallery
+                    </div>
+                    <div class="next-btn">
+                        market
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="video-box">
+                    <video src="images/market.mp4" controls muted autoplay="" loop=""></video>
+                </div>
+                <div class="content">
+                    <h1>마치 마법과도 같은<br><span>메타버스 마켓을 </span>경험해봐</h1>
+                </div>
+                <div class="btns">
+                    <div class="prev-btn">
+                        world
+                    </div>
+                    <div class="next-btn">
+                        my me
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fas fa-arrow-left"></i></button>
+            <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-wrap">
+            <p>&copy; 2022 The crossing lab all rights reserved<br><span>contact us</span></p>
+            <a href="https://www.youtube.com/channel/UCtg0QqpB5Phw-NE5eQ5Tsxw">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        /* home teaser slider */
+        const slides = document.querySelectorAll('.slide');
+        const next = document.querySelector('#next');
+        const prev = document.querySelector('#prev');
+        const auto = true; // Auto scroll
+        const intervalTime = 25000;
+        let slideInterval;
+
+        const nextSlide = () => {
+            // Get current class
+            const current = document.querySelector('.current');
+            // Remove current class
+            current.classList.remove('current');
+            // Check for next slide
+            if (current.nextElementSibling) {
+                // Add current to next sibling
+                current.nextElementSibling.classList.add('current');
+            } else {
+                // Add current to start
+                slides[0].classList.add('current');
+            }
+            setTimeout(() => current.classList.remove('current'));
+        };
+
+        const prevSlide = () => {
+            // Get current class
+            const current = document.querySelector('.current');
+            // Remove current class
+            current.classList.remove('current');
+            // Check for prev slide
+            if (current.previousElementSibling) {
+                // Add current to prev sibling
+                current.previousElementSibling.classList.add('current');
+            } else {
+                // Add current to last
+                slides[slides.length - 1].classList.add('current');
+            }
+            setTimeout(() => current.classList.remove('current'));
+        };
+
+        // Button events
+        next.addEventListener('click', e => {
+            nextSlide();
+            if (auto) {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, intervalTime);
+            }
+        });
+
+        prev.addEventListener('click', e => {
+            prevSlide();
+            if (auto) {
+                clearInterval(slideInterval);
+                slideInterval = setInterval(nextSlide, intervalTime);
+            }
+        });
+
+        // Auto slide
+        if (auto) {
+            // Run next slide at interval time
+            slideInterval = setInterval(nextSlide, intervalTime);
+        }
+    </script>
+</body>
+
+</html>
