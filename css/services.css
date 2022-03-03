@@ -880,6 +880,72 @@ html body #main #world-container .content .content-wrap button i {
 
 html body #main #market-container {
   height: 100vh;
+  color: #fff;
+}
+
+html body #main #market-container {
+  height: 100%;
+  color: #fff;
+  padding: 80px 0;
+}
+
+html body #main #market-container .market-wrap {
+  width: 100%;
+  margin: 0px auto;
+  padding: 50px 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #0000ff;
+  cursor: pointer;
+}
+
+html body #main #market-container .market-wrap span {
+  width: 5%;
+  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
+html body #main #market-container .market-wrap h2 {
+  font-size: 30px;
+  width: 30%;
+  font-family: 'Poppins', sans-serif;
+}
+
+html body #main #market-container .market-wrap ul {
+  width: 65%;
+}
+
+html body #main #market-container .market-wrap ul li {
+  width: 100%;
+  list-style: square;
+  font-size: 21px;
+  margin-bottom: 30px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+html body #main #market-container .market-wrap ul li h6 {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+html body #main #market-container .market-wrap ul li:last-child {
+  margin-bottom: 0;
+}
+
+html body #main #market-container .market-wrap p {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 65%;
+  font-size: 21px;
+}
+
+html body #main #market-container .market-wrap .is_on {
+  display: none;
+}
+
+html body #main #market-container .market-wrap:last-child {
+  border-bottom: 1px solid #0000ff;
 }
 
 html body #main #top-btn {
