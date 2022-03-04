@@ -606,8 +606,7 @@ html body #main #gallery-container .img-wrap .img-box h2 {
   text-transform: uppercase;
 }
 
-html body #main #gallery-container .img-wrap .img-box .modal-open,
-html body #main #gallery-container .img-wrap .img-box .modal-open2 {
+html body #main #gallery-container .img-wrap .img-box .modal-open {
   position: absolute;
   top: 50px;
   right: 50px;
@@ -616,12 +615,12 @@ html body #main #gallery-container .img-wrap .img-box .modal-open2 {
   cursor: pointer;
 }
 
-html body #main #gallery-container .img-wrap .img-box .modal-open i,
-html body #main #gallery-container .img-wrap .img-box .modal-open2 i {
+html body #main #gallery-container .img-wrap .img-box .modal-open i {
   font-size: 50px;
 }
 
-html body #main #gallery-container .my-gal-modal {
+html body #main #gallery-container .my-gal {
+  display: none;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -632,7 +631,7 @@ html body #main #gallery-container .my-gal-modal {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-html body #main #gallery-container .my-gal-modal .modal-wrap {
+html body #main #gallery-container .my-gal .modal-wrap {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -650,7 +649,7 @@ html body #main #gallery-container .my-gal-modal .modal-wrap {
           transform: translateY(-50%);
 }
 
-html body #main #gallery-container .my-gal-modal .modal-wrap .modal-txt {
+html body #main #gallery-container .my-gal .modal-wrap .modal-txt {
   width: 50%;
   height: 40vh;
   color: #fff;
@@ -658,31 +657,31 @@ html body #main #gallery-container .my-gal-modal .modal-wrap .modal-txt {
   padding: 80px;
 }
 
-html body #main #gallery-container .my-gal-modal .modal-wrap .modal-txt h2 {
+html body #main #gallery-container .my-gal .modal-wrap .modal-txt h2 {
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
 }
 
-html body #main #gallery-container .my-gal-modal .modal-wrap .modal-txt p {
+html body #main #gallery-container .my-gal .modal-wrap .modal-txt p {
   font-size: 21px;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-html body #main #gallery-container .my-gal-modal .modal-wrap .modal-img {
+html body #main #gallery-container .my-gal .modal-wrap .modal-img {
   width: 50%;
   height: 40vh;
 }
 
-html body #main #gallery-container .my-gal-modal .modal-wrap .modal-img img {
+html body #main #gallery-container .my-gal .modal-wrap .modal-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-html body #main #gallery-container .my-gal-modal .close-btn {
+html body #main #gallery-container .my-gal .close-btn {
   position: absolute;
   width: 78px;
   height: 78px;
@@ -693,12 +692,12 @@ html body #main #gallery-container .my-gal-modal .close-btn {
   cursor: pointer;
 }
 
-html body #main #gallery-container .my-gal-modal .close-btn i {
+html body #main #gallery-container .my-gal .close-btn i {
   color: #fff;
   font-size: 50px;
 }
 
-html body #main #gallery-container .special-gal-modal {
+html body #main #gallery-container .special-gal {
   width: 100%;
   height: 100vh;
   position: relative;
@@ -707,9 +706,10 @@ html body #main #gallery-container .special-gal-modal {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.8);
+  display: none;
 }
 
-html body #main #gallery-container .special-gal-modal .modal-wrap {
+html body #main #gallery-container .special-gal .modal-wrap {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -727,7 +727,7 @@ html body #main #gallery-container .special-gal-modal .modal-wrap {
           transform: translateY(-50%);
 }
 
-html body #main #gallery-container .special-gal-modal .modal-wrap .modal-txt {
+html body #main #gallery-container .special-gal .modal-wrap .modal-txt {
   width: 50%;
   height: 40vh;
   color: #fff;
@@ -735,31 +735,31 @@ html body #main #gallery-container .special-gal-modal .modal-wrap .modal-txt {
   padding: 80px;
 }
 
-html body #main #gallery-container .special-gal-modal .modal-wrap .modal-txt h2 {
+html body #main #gallery-container .special-gal .modal-wrap .modal-txt h2 {
   font-size: 40px;
   text-transform: uppercase;
   margin-bottom: 50px;
   font-family: 'Poppins', sans-serif;
 }
 
-html body #main #gallery-container .special-gal-modal .modal-wrap .modal-txt p {
+html body #main #gallery-container .special-gal .modal-wrap .modal-txt p {
   font-size: 21px;
   font-family: 'Noto Sans KR', sans-serif;
 }
 
-html body #main #gallery-container .special-gal-modal .modal-wrap .modal-img {
+html body #main #gallery-container .special-gal .modal-wrap .modal-img {
   width: 50%;
   height: 40vh;
 }
 
-html body #main #gallery-container .special-gal-modal .modal-wrap .modal-img img {
+html body #main #gallery-container .special-gal .modal-wrap .modal-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-html body #main #gallery-container .special-gal-modal .close-btn2 {
+html body #main #gallery-container .special-gal .close-btn {
   position: absolute;
   width: 78px;
   height: 78px;
@@ -770,7 +770,7 @@ html body #main #gallery-container .special-gal-modal .close-btn2 {
   cursor: pointer;
 }
 
-html body #main #gallery-container .special-gal-modal .close-btn2 i {
+html body #main #gallery-container .special-gal .close-btn i {
   color: #fff;
   font-size: 50px;
 }
@@ -910,6 +910,7 @@ html body #main #market-container .market-wrap h2 {
   font-size: 30px;
   width: 30%;
   font-family: 'Poppins', sans-serif;
+  display: block;
 }
 
 html body #main #market-container .market-wrap ul {
@@ -942,6 +943,10 @@ html body #main #market-container .market-wrap p {
 
 html body #main #market-container .market-wrap .is_on {
   display: none;
+}
+
+html body #main #market-container h2:hover .market-wrap {
+  background-color: #0000ff;
 }
 
 html body #main #market-container .market-wrap:last-child {

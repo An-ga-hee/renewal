@@ -96,12 +96,16 @@ body header nav .gnb li .submenu li {
   font-weight: 500;
 }
 
+body header nav .gnb li .submenu .on {
+  color: #ffffff6b;
+}
+
 body header nav .gnb .menu-hover:hover .submenu {
   opacity: 1;
 }
 
 body header nav .gnb .submenu li:hover a {
-  color: rgba(255, 255, 255, 0.42);
+  color: #ffffff6b;
 }
 
 body header .language {

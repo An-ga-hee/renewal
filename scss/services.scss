@@ -577,8 +577,7 @@ html {
                             text-transform: uppercase;
                         }
 
-                        .modal-open,
-                        .modal-open2 {
+                        .modal-open {
                             position: absolute;
                             top: 50px;
                             right: 50px;
@@ -593,8 +592,8 @@ html {
                     }
                 }
 
-                .my-gal-modal {
-
+                .my-gal {
+                    display: none;
                     width: 100%;
                     height: 100vh;
                     position: relative;
@@ -668,7 +667,7 @@ html {
                     }
                 }
 
-                .special-gal-modal {
+                .special-gal {
                     width: 100%;
                     height: 100vh;
                     position: relative;
@@ -677,7 +676,7 @@ html {
                     right: 0;
                     bottom: 0;
                     background-color: rgba(0, 0, 0, 0.8);
-
+                    display: none;
 
                     .modal-wrap {
                         width: 100%;
@@ -721,7 +720,7 @@ html {
                         }
                     }
 
-                    .close-btn2 {
+                    .close-btn {
                         position: absolute;
                         width: 78px;
                         height: 78px;
@@ -871,6 +870,8 @@ html {
                         font-size: 30px;
                         width: 30%;
                         font-family: 'Poppins', sans-serif;
+                        display: block;
+                        
                     }
 
                     ul {
@@ -904,14 +905,14 @@ html {
                     .is_on {
                         display: none;
                     }
-
+                    
                 }
-
+                h2:hover .market-wrap {background-color: #0000ff;}
                 // .market-wrap:hover .accordion {
                 //     display: block;
                 //     transition: all 2s;
                 // }
-
+                // .market-wrap {background-color: #000;}
                 .market-wrap:last-child {
                     border-bottom: 1px solid #0000ff;
                 }
