@@ -556,6 +556,22 @@ html body #main #theme .case-study-images li:nth-child(4) .img-hero-background {
   background-image: radial-gradient(rgba(0, 0, 0, 0), black), url("../images/ourStory/grid-4.png");
 }
 
+html body #main #theme .case-study-images li:nth-child(5) .img-hero-background {
+  background-image: radial-gradient(rgba(0, 0, 0, 0), black), url("../images/ourStory/grid-5.png");
+}
+
+html body #main #theme .case-study-images li:nth-child(6) .img-hero-background {
+  background-image: radial-gradient(rgba(0, 0, 0, 0), black), url("../images/ourStory/grid-6.png");
+}
+
+html body #main #theme .case-study-images li:nth-child(7) .img-hero-background {
+  background-image: radial-gradient(rgba(0, 0, 0, 0), black), url("../images/ourStory/grid-7.png");
+}
+
+html body #main #theme .case-study-images li:nth-child(8) .img-hero-background {
+  background-image: radial-gradient(rgba(0, 0, 0, 0), black), url("../images/ourStory/grid-8.png");
+}
+
 html body footer {
   height: 300px;
   background-color: #000;
