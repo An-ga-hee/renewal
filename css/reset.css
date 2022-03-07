@@ -60,10 +60,10 @@ html body header nav .gnb {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 30px;
-  height: 50px;
-  line-height: 50px;
-  margin-top: 35px;
+  gap: 40px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 42.5px;
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
@@ -74,6 +74,10 @@ html body header nav .gnb li {
   font-size: 22px;
   text-align: center;
   font-weight: bold;
+}
+
+html body header nav .gnb li a {
+  display: block;
 }
 
 html body header nav .gnb li .submenu {
@@ -93,8 +97,16 @@ html body header nav .gnb li .submenu {
 html body header nav .gnb li .submenu li {
   font-size: 14px;
   text-align: center;
-  margin: 0 15px;
+  margin: 0 8px;
   font-weight: 500;
+}
+
+html body header nav .gnb li .submenu li a {
+  display: block;
+}
+
+html body header nav .gnb .gnb-hover:hover a {
+  color: rgba(255, 255, 255, 0.42);
 }
 
 html body header nav .gnb .menu-hover:hover .submenu {
@@ -181,9 +193,14 @@ html body footer .footer-wrap span:hover {
   text-decoration: underline;
 }
 
-html body footer .footer-wrap i {
-  font-size: 35px;
-  color: red;
+html body footer .footer-wrap a {
+  width: 45px;
+  height: 31px;
+}
+
+html body footer .footer-wrap a img {
+  width: 100%;
+  height: 100%;
 }
 
 html body #top-btn {
@@ -192,9 +209,10 @@ html body #top-btn {
   position: fixed;
   bottom: 5%;
   right: 3%;
-  border: 1px solid #fff;
+  border: 4px solid #fff;
   border-radius: 50%;
   padding: 0 16px 5px;
+  z-index: 999;
 }
 
 html body #top-btn:hover {

@@ -53,10 +53,10 @@ html {
                 .gnb {
                     display: flex;
                     flex-direction: row;
-                    gap: 30px;
-                    height: 50px;
-                    line-height: 50px;
-                    margin-top: 35px;
+                    gap: 40px;
+                    height: 35px;
+                    line-height: 35px;
+                    margin-top: 42.5px;
                     justify-content: right;
 
                     li {
@@ -64,6 +64,10 @@ html {
                         font-size: 22px;
                         text-align: center;
                         font-weight: bold;
+
+                        a {
+                            display: block;
+                        }
 
                         .submenu {
                             opacity: 0;
@@ -74,11 +78,19 @@ html {
                             li {
                                 font-size: 14px;
                                 text-align: center;
-                                margin: 0 15px;
+                                margin: 0 8px;
                                 font-weight: 500;
+
+                                a {
+                                    display: block;
+                                }
                             }
                         }
 
+                    }
+
+                    .gnb-hover:hover a {
+                        color: rgba(255, 255, 255, 0.42);
                     }
 
                     .menu-hover:hover .submenu {
@@ -156,9 +168,14 @@ html {
                     text-decoration: underline;
                 }
 
-                i {
-                    font-size: 35px;
-                    color: red;
+                a {
+                    width: 45px;
+                    height: 31px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
 
                 }
 
@@ -172,9 +189,10 @@ html {
             position: fixed;
             bottom: 5%;
             right: 3%;
-            border: 1px solid #fff;
+            border: 4px solid #fff;
             border-radius: 50%;
             padding: 0 16px 5px;
+            z-index: 999;
         }
 
         #top-btn:hover {
