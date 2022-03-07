@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Crossing Lab</title>
+    <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/business.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
@@ -60,60 +61,89 @@
         </section>
         <section id="theme">
             <h2>Metaverse</h2>
-            <div class="container">
-                <ul class="theme-container">
-                    <li class="theme-wrap">
-                        Social Platform
+            <div class="section">
+                <ul class="case-study-wrapper">
+                    <li class="case-study-name">                            	
+                        <a href="#" class="hover-target">Social Platform</a>
                     </li>
-                    <li class="theme-wrap">
-                        Exhibition
+                    <li class="case-study-name">                                         	
+                        <a href="#" class="hover-target">Exhibition</a>
                     </li>
-                    <li class="theme-wrap">
-                        Healing
+                    <li class="case-study-name">                                        	
+                        <a href="#" class="hover-target">Healing</a>
                     </li>
-                    <li class="theme-wrap">
-                        Shopping
+                    <li class="case-study-name">                                         	
+                        <a href="#" class="hover-target">Shopping</a>
                     </li>
-                    <li class="theme-wrap">
-                        Sports
+                    <li class="case-study-name">                                         	
+                        <a href="#" class="hover-target">Sports</a>
                     </li>
-                    <li class="theme-wrap">
-                        Brand Promotion
+                    <li class="case-study-name">                                         	
+                        <a href="#" class="hover-target">Brand Promotion</a>
                     </li>
-                    <li class="theme-wrap">
-                        Tour
+                    <li class="case-study-name">                                         	
+                        <a href="#" class="hover-target">Tour</a>
                     </li>
-                    <li class="theme-wrap">
-                        Church
+                    <li class="case-study-name">                                         	
+                        <a href="#" class="hover-target">Church</a>
                     </li>
                 </ul>
-                <ul class="img-container">
-                    <li class="img-wrap">
-                        <img src="../images/ourStory/grid-1.png" alt="">
+                <ul class="case-study-images">
+                    <li>
+                        <div class="img-hero-background"></div> 
+
+                        <div class="hero-number-back">01</div> 
+                        <div class="hero-number">01</div> 
+                        <div class="hero-number-fixed">08</div> 
+                        <!-- <div class="case-study-title">graphic design, interaction</div>  -->
                     </li>
-                    <li class="img-wrap">
-                        <img src="../images/ourStory/grid-2.png" alt="">
+                    <li>
+                        <div class="img-hero-background"></div> 
+                        <div class="hero-number-back">02</div> 
+                        <div class="hero-number">02</div>  
+                        <!-- <div class="case-study-title">advertising, art direction</div>  -->
                     </li>
-                    <li class="img-wrap">
-                        <img src="../images/ourStory/grid-3.png" alt="">
+                    <li>
+                        <div class="img-hero-background"></div>
+                        <div class="hero-number-back">03</div>  
+                        <div class="hero-number">03</div> 
+                        <!-- <div class="case-study-title">photography, retouching</div>  -->
                     </li>
-                    <li class="img-wrap">
-                        <img src="../images/ourStory/grid-4.png" alt="">
+                    <li>
+                        <div class="img-hero-background"></div> 
+                        <div class="hero-number-back">04</div> 
+                        <div class="hero-number">04</div> 
+                        <!-- <div class="case-study-title">photography, advertising</div>  -->
+                        </li>
+                    <li>
+                        <div class="img-hero-background"></div> 
+                        <div class="hero-number-back">05</div> 
+                        <div class="hero-number">05</div> 
+                        <!-- <div class="case-study-title">photography, advertising</div>  -->
                     </li>
-                    <li class="img-wrap">
-                        <img src="../images/ourStory/grid-5.png" alt="">
+                    <li>
+                        <div class="img-hero-background"></div> 
+                        <div class="hero-number-back">06</div> 
+                        <div class="hero-number">06</div> 
+                        <!-- <div class="case-study-title">photography, advertising</div>  -->
                     </li>
-                    <li class="img-wrap">
-                        <img src="../images/ourStory/grid-6.png" alt="">
+                    <li>
+                        <div class="img-hero-background"></div> 
+                        <div class="hero-number-back">07</div> 
+                        <div class="hero-number">07</div> 
+                        <!-- <div class="case-study-title">photography, advertising</div>  -->
                     </li>
-                    <li class="img-wrap">
-                        <img src="../images/ourStory/grid-7.png" alt="">
-                    </li>
-                    <li class="img-wrap">
-                        <img src="../images/ourStory/grid-8.png" alt="">
+                    <li>
+                        <div class="img-hero-background"></div> 
+                        <div class="hero-number-back">08</div> 
+                        <div class="hero-number">08</div> 
+                        <!-- <div class="case-study-title">photography, advertising</div>  -->
                     </li>
                 </ul>
             </div>
+            <div class='cursor' id="cursor"></div>
+            <div class='cursor2' id="cursor2"></div>
+            <div class='cursor3' id="cursor3"></div>
         </section>
         <a href="#" id="top-btn"><i class="fas fa-angle-up"></i></a>
     </div>
@@ -130,7 +160,95 @@
     <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+(function($) { "use strict";
+		
+        //Page cursors
+    
+        document.getElementsByTagName("body")[0].addEventListener("mousemove", function(n) {
+            t.style.left = n.clientX + "px", 
+            t.style.top = n.clientY + "px", 
+            e.style.left = n.clientX + "px", 
+            e.style.top = n.clientY + "px", 
+            i.style.left = n.clientX + "px", 
+            i.style.top = n.clientY + "px"
+        });
+        var t = document.getElementById("cursor"),
+            e = document.getElementById("cursor2"),
+            i = document.getElementById("cursor3");
+        function n(t) {
+            e.classList.add("hover"), i.classList.add("hover")
+        }
+        function s(t) {
+            e.classList.remove("hover"), i.classList.remove("hover")
+        }
+        s();
+        for (var r = document.querySelectorAll(".hover-target"), a = r.length - 1; a >= 0; a--) {
+            o(r[a])
+        }
+        function o(t) {
+            t.addEventListener("mouseover", n), t.addEventListener("mouseout", s)
+        }
         
+        $(document).ready(function() {
+            
+            /* Hero Case study images */			
+            
+            $('.case-study-name:nth-child(1)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(1)').addClass("show");
+                $('.case-study-name:nth-child(1)').addClass('active');
+            })
+            $('.case-study-name:nth-child(2)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(2)').addClass("show");
+                $('.case-study-name:nth-child(2)').addClass('active');
+            })
+            $('.case-study-name:nth-child(3)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(3)').addClass("show");
+                $('.case-study-name:nth-child(3)').addClass('active');
+            })
+            $('.case-study-name:nth-child(4)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(4)').addClass("show");
+                $('.case-study-name:nth-child(4)').addClass('active');
+            })
+            $('.case-study-name:nth-child(5)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(5)').addClass("show");
+                $('.case-study-name:nth-child(5)').addClass('active');
+            })
+            $('.case-study-name:nth-child(6)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(6)').addClass("show");
+                $('.case-study-name:nth-child(6)').addClass('active');
+            })
+            $('.case-study-name:nth-child(7)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(7)').addClass("show");
+                $('.case-study-name:nth-child(7)').addClass('active');
+            })
+            $('.case-study-name:nth-child(8)').on('mouseenter', function() {
+                $('.case-study-name.active').removeClass('active');
+                $('.case-study-images li.show').removeClass("show");
+                $('.case-study-images li:nth-child(8)').addClass("show");
+                $('.case-study-name:nth-child(8)').addClass('active');
+            })
+            $('.case-study-name:nth-child(1)').trigger('mouseenter')
+                        
+        });
+    
+        
+        
+        
+      })(jQuery); 
     </script>
 </body>
 

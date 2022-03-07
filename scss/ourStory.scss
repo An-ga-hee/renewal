@@ -1,134 +1,8 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
 html {
-    // scroll-behavior: smooth;
 
     body {
-        font-family: 'Noto Sans KR', sans-serif;
-        background-color: #000;
-        // position: relative;
-
-        header {
-            width: 100%;
-            height: 120px;
-            display: flex;
-            justify-content: space-between;
-            position: fixed;
-            z-index: 1000;
-            padding: 0 70px;
-
-            .logo {
-                width: 120px;
-                height: 53px;
-                margin-top: 33.5px;
-
-                img {
-                    width: 120px;
-                    height: 100%;
-                }
-            }
-
-            nav {
-                font-family: 'Poppins', sans-serif;
-                letter-spacing: 1px;
-                width: 100%;
-
-                .gnb {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 30px;
-                    height: 50px;
-                    line-height: 50px;
-                    margin-top: 35px;
-                    justify-content: right;
-
-                    li {
-                        color: #fff;
-                        font-size: 22px;
-                        text-align: center;
-                        font-weight: bold;
-
-                        .submenu {
-                            opacity: 0;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-
-                            li {
-                                font-size: 14px;
-                                text-align: center;
-                                margin: 0 15px;
-                                font-weight: 500;
-                            }
-                        }
-
-                    }
-
-                    // .gnb-hover:hover a {color: rgba(255, 255, 255, 0.42);}
-                    .menu-hover:hover .submenu {
-                        opacity: 1;
-                    }
-
-
-                    .submenu li:hover a {
-                        color: rgba(255, 255, 255, 0.42);
-                    }
-
-                }
-            }
-
-            .language {
-                display: flex;
-                font-family: 'Poppins', sans-serif;
-                letter-spacing: 1px;
-                flex-direction: row;
-                cursor: pointer;
-                height: 50px;
-                line-height: 50px;
-                margin-top: 35px;
-                margin-left: 80px;
-
-                li {
-                    color: #fff;
-                    font-weight: 600;
-                    font-size: 22px;
-                }
-
-                li:hover {
-                    color: rgba(255, 255, 255, 0.42);
-                }
-
-                li::after {
-                    content: "|";
-                    font-weight: 200;
-                    padding: 0 10px;
-                    color: #fff;
-                }
-
-                li:last-child::after {
-                    content: "";
-                    padding: 0;
-
-                }
-            }
-        }
 
         #visual {
             width: 100vw;
@@ -184,7 +58,7 @@ html {
                 position: relative;
                 max-width: 100%;
                 max-height: 100%;
-                
+
 
                 h1 {
                     font-family: 'Noto Sans KR', sans-serif;
@@ -229,7 +103,6 @@ html {
                         // opacity: 0;
                     }
                 }
-
 
                 .pos-1 {
                     grid-area: 22 / 1 / 38 / 8;
@@ -350,63 +223,6 @@ html {
                         object-fit: cover;
                     }
                 }
-            }
-
-            #top-btn {
-                color: #fff;
-                font-size: 30px;
-                position: fixed;
-                bottom: 5%;
-                right: 3%;
-                border: 1px solid #fff;
-                border-radius: 50%;
-                padding: 0 16px 5px;
-            }
-
-            #top-btn:hover {
-                background-color: rgba(255, 255, 255, 0.2);
-            }
-
-
-        }
-
-        footer {
-            height: 300px;
-            background-color: #000;
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-
-            .footer-wrap {
-                padding: 0 70px;
-                width: 100%;
-                margin: 0 auto;
-                display: flex;
-                height: 100%;
-                justify-content: space-between;
-                align-items: center;
-                box-sizing: border-box;
-                color: #fff;
-
-                span {
-                    text-transform: uppercase;
-                    cursor: pointer;
-                    line-height: 2;
-                    margin-left: 15px;
-                }
-
-                span:hover {
-                    text-decoration: underline;
-                }
-
-                i {
-                    font-size: 35px;
-                    color: red;
-
-                }
-
-                // i:hover {
-                //     color: red;
-                // }
             }
 
         }

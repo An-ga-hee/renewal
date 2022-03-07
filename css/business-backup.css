@@ -308,12 +308,6 @@ html body #main #theme .cursor3.hover {
   border: none;
 }
 
-html body #main #theme .cursor2 {
-  border: 2px solid #fff;
-  -webkit-box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
-          box-shadow: 0 0 22px rgba(255, 255, 255, 0.6);
-}
-
 html body #main #theme .cursor2.hover {
   background: rgba(255, 255, 255, 0.1);
   -webkit-box-shadow: 0 0 12px rgba(255, 255, 255, 0.2);
