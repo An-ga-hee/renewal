@@ -7,7 +7,7 @@ html body #visual {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: YoonGothicPro770;
   position: relative;
 }
 
@@ -27,11 +27,6 @@ html body #visual .visual-txt h1 {
   font-size: 56px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-weight: 300;
-}
-
-html body #visual .visual-txt h1 span {
-  font-weight: 600;
 }
 
 html body #main {
@@ -279,7 +274,7 @@ html body #main #my-me-container .content .content-wrap {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: YoonGothicPro770;
 }
 
 html body #main #my-me-container .content .content-wrap p {

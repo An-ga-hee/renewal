@@ -17,7 +17,7 @@ a {
 }
 
 html body {
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: Segma;
   background-color: #000;
 }
 
@@ -47,8 +47,7 @@ html body header .logo img {
 }
 
 html body header nav {
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 1px;
+  font-family: Segma;
   width: 100%;
 }
 
@@ -121,7 +120,6 @@ html body header .language {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: 'Poppins', sans-serif;
   letter-spacing: 1px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -159,7 +157,7 @@ html body header .language li:last-child::after {
 html body footer {
   height: 300px;
   background-color: #000;
-  font-family: 'Poppins', sans-serif;
+  font-family: Segma;
   font-size: 16px;
 }
 

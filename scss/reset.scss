@@ -21,7 +21,7 @@ html {
     // scroll-behavior: smooth;
 
     body {
-        font-family: 'Noto Sans KR', sans-serif;
+        font-family: Segma;
         background-color: #000;
         // position: relative;
 
@@ -46,9 +46,11 @@ html {
             }
 
             nav {
-                font-family: 'Poppins', sans-serif;
-                letter-spacing: 1px;
+                font-family: Segma;
+                // font-family: 'Poppins', sans-serif;
+                // letter-spacing: 1px;
                 width: 100%;
+                // font-weight: 700;
 
                 .gnb {
                     display: flex;
@@ -106,7 +108,7 @@ html {
 
             .language {
                 display: flex;
-                font-family: 'Poppins', sans-serif;
+                // font-family: 'Poppins', sans-serif;
                 letter-spacing: 1px;
                 flex-direction: row;
                 cursor: pointer;
@@ -143,9 +145,9 @@ html {
         footer {
             height: 300px;
             background-color: #000;
-            font-family: 'Poppins', sans-serif;
+            font-family: Segma;
             font-size: 16px;
-
+            
             .footer-wrap {
                 padding: 0 70px;
                 width: 100%;

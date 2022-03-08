@@ -47,9 +47,12 @@ body {
                     border-radius: 15px 50px;
 
                     h1 {
+                        // font-family: 'Noto Sans KR', sans-serif;
+                        font-family: YoonGothicPro770;
                         letter-spacing: 1px;
                         font-size: 56px;
-                        font-weight: 300;
+                        // font-weight: 400;
+                        font-weight: 700;
                         line-height: 1.1;
 
                         span {
@@ -64,8 +67,8 @@ body {
                     z-index: 100;
                     font-size: 17px;
                     letter-spacing: 1.5px;
-                    font-family: 'Poppins', sans-serif;
-
+                    // font-family: 'Poppins', sans-serif;
+                    font-family: Segma;
                     .prev-btn {
                         position: absolute;
                         left: 0;
