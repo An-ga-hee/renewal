@@ -374,7 +374,7 @@ html body #main #my-space-container .content .content-wrap {
   display: -ms-flexbox;
   display: flex;
   gap: 50px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: YoonGothicPro770;
 }
 
 html body #main #my-space-container .content .content-wrap p {
@@ -420,7 +420,7 @@ html body #main #gallery-container .txt-box h2 {
 
 html body #main #gallery-container .txt-box p {
   font-size: 28px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: YoonGothicPro770;
 }
 
 html body #main #gallery-container .img-wrap {
