@@ -32,17 +32,17 @@ html body header {
           justify-content: space-between;
   position: fixed;
   z-index: 1000;
-  padding: 0 70px;
+  padding: 0 3vw;
 }
 
 html body header .logo {
-  width: 120px;
-  height: 53px;
+  width: 8vw;
+  height: 6vh;
   margin-top: 33.5px;
 }
 
 html body header .logo img {
-  width: 120px;
+  width: 100%;
   height: 100%;
 }
 
@@ -70,7 +70,7 @@ html body header nav .gnb {
 
 html body header nav .gnb li {
   color: #fff;
-  font-size: 22px;
+  font-size: 1.3vw;
   text-align: center;
   font-weight: bold;
 }
@@ -94,7 +94,7 @@ html body header nav .gnb li .submenu {
 }
 
 html body header nav .gnb li .submenu li {
-  font-size: 14px;
+  font-size: 0.9vw;
   text-align: center;
   margin: 0 8px;
   font-weight: 500;

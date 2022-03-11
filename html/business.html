@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="logo">
             <a href="../index.html">
@@ -39,10 +40,14 @@
             <li>KO</li>
             <li>EN</li>
         </ul>
+
     </header>
     <section id="visual">
         <div class="visual-txt">
             <h1>더크로싱랩은 새로운 시대에 필요한<br><span>온라인 비즈니스에 </span>힘을 불어넣어 드립니다</h1>
+        </div>
+        <div id="section9">
+                <div class="scroll">Scroll<span></span></div>
         </div>
     </section>
     <div id="main">
@@ -151,7 +156,9 @@
     </div>
     <footer>
         <div class="footer-wrap">
-            <p>&copy; 2022 The crossing lab all rights reserved<br><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=official@thecrossinglab.com" target="_blank"><span>contact us</span></a></p>
+            <p>&copy; 2022 The crossing lab all rights reserved<br><a
+                    href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=official@thecrossinglab.com"
+                    target="_blank"><span>contact us</span></a></p>
             <a href="https://www.youtube.com/channel/UCtg0QqpB5Phw-NE5eQ5Tsxw" target="_blank">
                 <img src="../images/Y_1.png" alt="">
             </a>
@@ -251,10 +258,17 @@
 
             });
 
-
-
-
         })(jQuery);
+        $('a[href^="#"]').on("click", function (e) {
+            e.preventDefault();
+            var target = $($(this).attr("href"));
+
+            if (target.length) {
+                $("html, body").animate({
+                    scrollTop: target.offset().top
+                }, 400, "easeInOutQuad");
+            }
+        });
     </script>
 </body>
 

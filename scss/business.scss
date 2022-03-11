@@ -41,6 +41,61 @@ html {
                     }
                 }
             }
+
+            .scroll {
+                padding-top: 60px;
+                position: absolute;
+                bottom: 5%;
+                left: 50%;
+                font-family: Segma;
+                color: #fff;
+            }
+
+            .scroll span {
+                position: absolute;
+                bottom: 35%;
+                left: 50%;
+                width: 30px;
+                height: 50px;
+                margin-left: -15px;
+                border: 2px solid #fff;
+                border-radius: 50px;
+                box-sizing: border-box;
+            }
+
+            .scroll span::before {
+                position: absolute;
+                top: 10px;
+                left: 50%;
+                content: '';
+                width: 6px;
+                height: 6px;
+                margin-left: -3px;
+                background-color: #fff;
+                border-radius: 100%;
+                animation: sdb9 2s infinite;
+                box-sizing: border-box;
+            }
+
+            @keyframes sdb9 {
+                0% {
+                    transform: translate(0, 0);
+                    opacity: 0;
+                }
+
+                40% {
+                    opacity: 1;
+                }
+
+                80% {
+                    transform: translate(0, 20px);
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 0;
+                }
+            }
         }
 
         #main {
@@ -75,6 +130,7 @@ html {
                 }
 
                 .business-txt {
+
                     position: absolute;
                     color: #fff;
                     height: 50vh;

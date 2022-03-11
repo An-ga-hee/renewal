@@ -34,6 +34,82 @@ html body #visual .visual-txt h1 span {
   font-weight: 600;
 }
 
+html body #visual .scroll {
+  padding-top: 60px;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  font-family: Segma;
+  color: #fff;
+}
+
+html body #visual .scroll span {
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  width: 30px;
+  height: 50px;
+  margin-left: -15px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html body #visual .scroll span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sdb9 2s infinite;
+          animation: sdb9 2s infinite;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb9 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb9 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 html body #main #business {
   height: 100vh;
   position: relative;
